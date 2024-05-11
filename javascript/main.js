@@ -30,9 +30,10 @@ if (mainColors !== null) {
 
 }
 
+
 //Random BackGround Option 
 
-let backgroundOption = true;
+let backgroundOption = false;
 
 //Variable To Control The Background Interval
 
