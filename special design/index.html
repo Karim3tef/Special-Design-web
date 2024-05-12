@@ -4,12 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Special Design</title>
+        <title>Verde Restaurant</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/verdi-logo.jpeg" type="image/x-icon">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
     </head>
     <body>
@@ -55,10 +60,13 @@
         <!-- Start Nav Bullets -->
         <div class="nav-bullets">
             <div class="bullet" data-section=".about-us">
-                <div class="tool-tip" >About Us</div>
+                <div class="tool-tip" >Abstract</div>
+            </div>
+            <div class="bullet" data-section=".features">
+                <div class="tool-tip" >Features</div>
             </div>
             <div class="bullet" data-section=".skills">
-                <div class="tool-tip" >Our Skills</div>
+                <div class="tool-tip" >Menu</div>
             </div>
             <div class="bullet" data-section=".gallery">
                 <div class="tool-tip" >Our Gallery</div>
@@ -66,11 +74,8 @@
             <div class="bullet" data-section=".time-line">
                 <div class="tool-tip" >TimeLine</div>
             </div>
-            <div class="bullet" data-section=".features">
-                <div class="tool-tip" >Features</div>
-            </div>
             <div class="bullet" data-section=".testimonials">
-                <div class="tool-tip" >Testimonials</div>
+                <div class="tool-tip" >Team Members</div>
             </div>
         </div>
         <!-- Start Nav Bullets -->
@@ -81,16 +86,16 @@
             <div class="container">
                 <div class="header-area">
                     <div class="logo">
-                        Special Design
+                        <img class="verde-logo" src="images/V-removebg-preview.png" alt="Verde">
                     </div>
                    <div class="links-container">
                         <ul class="links">
-                            <li><a href="#" class="active" data-section=".about-us">About</a></li>
-                            <li><a href="#" data-section=".skills">Skills</a></li>
+                            <li><a href="#" class="active" data-section=".about-us">Abstract</a></li>
+                            <li><a href="#" data-section=".features">Features</a></li>
+                            <li><a href="#" data-section=".skills">Menu</a></li>
                             <li><a href="#" data-section=".gallery">Gallery</a></li>
                             <li><a href="#" data-section=".time-line">TimeLine</a></li>
-                            <li><a href="#" data-section=".features">Features</a></li>
-                            <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+                            <li><a href="#" data-section=".testimonials">Team Members</a></li>
                         </ul>
                         <button class="toggle-menu">
                             <span></span>
@@ -101,7 +106,8 @@
                 </div>
             </div>  
             <div class="introduction">
-                <h1>We are <span>Creative</span> agency</h1>
+                <div id="myparticles"></div>
+                <h1>Welcome to <span>Verde </span> Restaurant</h1>
                 <p>Our incredible design , For any type of buissnes , If you want so contact with us to get your own design.</p>
             </div>
         </div>
@@ -111,54 +117,122 @@
        <div class="container">
             <div class="about-us">
                 <div class="info-box">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas sequi, deleniti autem nostrum rem! Aliquid doloribus optio quaerat recusandae ipsum accusantium doloremque, temporibus quasi, vitae corporis facere!</p>
+                    <h2>Abstract</h2>
+                    <p>The Grand challenges consequences and impacts facing Egypt are growing continuously,
+                        as each one contributes to the other. The Grand challenges are improving the use of alternative
+                        energies, reducing pollution, and improving the scientific, economic, and technological
+                        environment to implement green sustainable renewable energy in designing a smart building,
+                        which is the problem to be solved. The purpose of the study is to solve this problem by using
+                        environmentally sustainable approaches to decrease climate variations. The chosen solution is to
+                        construct a smart restaurant that implements green sustainable renewable energy. The prototype
+                        design requirements are to maintain a minimum temperature difference of 3 degrees between
+                        inside and outside, save at least 30% of the total energy produced, and achieve 95% accuracy in
+                        detecting gases and fires. The test plans illustrated the success of the prototype as it meets the
+                        design requirements, The results were successful, and the conclusion demonstrates that the
+                        solution can contribute to the solving of the problem.
+
+                    </p>
                 </div>
                 <div class="image-box">
-                    <img src="images/About Us.jpg" alt="">
+                    <img src="images/verdi-logo.jpeg" style="border-radius: 20px;" alt="">
                 </div>
             </div>
+            <hr>
+
        </div>
+
         <!-- End About Us -->
+
+        <!-- Start Our Features -->
+        <div class="features">
+            <h2>Smart System</h2> 
+            <div class="container">
+                <div class="feat-box">
+                    <img src="images/Feat-1.png" alt="">
+                    <h4>Temprature</h4>
+                    <p class="readings">Readings: <span class="values">2025</span></p>
+                </div>
+                <div class="feat-box">
+                    <img src="images/Feat-2.webp" alt="">
+                    <h4>Humidity</h4>
+                    <p class="readings">Readings: <span class="values">2025</span></p>
+                </div>
+                <div class="feat-box">
+                    <img src="images/Feat-3.webp" alt="">
+                    <h4>Air Quality</h4>
+                    <p class="readings">Readings: <span class="values">2025</span></p>
+                </div>
+                <div class="feat-box">
+                    <img src="images/Feat-4.webp" alt="">
+                    <h4>Energy Saving</h4>
+                    <p class="readings">Readings: <span class="values">2025</span></p>
+                </div>
+                <div class="feat-box">
+                    <img src="images/Feat-5.webp" alt="">
+                    <h4>Flame Detection</h4>
+                    <p class="readings">Readings: <span class="values">2025</span></p>
+                </div>
+                <div class="feat-box">
+                    <img src="images/Feat-6.webp" alt="">
+                    <h4>Mobile Application</h4>
+                    <p class="readings">Readings: <span class="values">2025</span></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+         </div>
+        <!-- End Our Features -->
 
         <!-- Start Our Skills -->
         <div class="skills">
             <div class="container">
-                <h2>Our Skills</h2>
+                <h2>Most Wanted Menu</h2>
                 <div class="skill-box">
-                    <div class="skill-name">HTML</div>
+                    <div class="skill-name">PIZZZA</div>
                     <div class="skill-progress">
                         <span data-progress="97%"></span>
                     </div>
+                    <div class="skill-name">$29.79
+                    </div>
                 </div>
                 <div class="skill-box">
-                    <div class="skill-name">CSS</div>
+                    <div class="skill-name">PASTA</div>
                     <div class="skill-progress">
                         <span data-progress="98%"></span>
                     </div>
+                    <div class="skill-name">$29.79
+                    </div>
                 </div>
                 <div class="skill-box">
-                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-name">AENEAN EU</div>
                     <div class="skill-progress">
                         <span data-progress="76%"></span>
                     </div>
+                    <div class="skill-name">$29.79
+                    </div>
                 </div>
                 <div class="skill-box">
-                    <div class="skill-name">Python</div>
+                    <div class="skill-name">DUIS SED ALIQUET</div>
                     <div class="skill-progress">
                         <span data-progress="91%"></span>
                     </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-name">PHP</div>
-                    <div class="skill-progress">
-                        <span data-progress="82%"></span>
+                    <div class="skill-name">$29.79
                     </div>
                 </div>
                 <div class="skill-box">
-                    <div class="skill-name">MySQL</div>
+                    <div class="skill-name">MOLLIS NULLA
+                    </div>
+                    <div class="skill-progress">
+                        <span data-progress="82%"></span>
+                    </div>
+                    <div class="skill-name">$29.79
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">CRAS MAXIMUS</div>
                     <div class="skill-progress">
                         <span data-progress="70%"></span>
+                    </div>
+                    <div class="skill-name skill-price">$29.79
                     </div>
                 </div>
             </div>
@@ -168,18 +242,12 @@
         <!-- Start Gallery -->
         <div class="gallery">
             <div class="container">
-                <h2>Our Gallery</h2>
+                <h2>Test Plan Video</h2>
                 <div class="images-box">
-                    <img src="images/01.jpg" alt="Image One">
-                    <img src="images/02.jpg" alt="Image Two">
-                    <img src="images/03.jpg" alt="Image Three">
-                    <img src="images/04.jpg" alt="Image Four">
-                    <img src="images/05.jpg" alt="Image Five">
-                    <img src="images/06.jpg" alt="">
-                    <img src="images/07.jpg" alt="">
-                    <img src="images/08.jpg" alt="">
-                    <img src="images/09.jpg" alt="">
-                    <img src="images/10.jpg" alt="">
+                    <video class="Test-plan" width="1000" height="600" controls>
+                        <source src="C:\Users\karim\Videos\Vids\2023-10-05 11-42-22.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                       </video> 
                 </div>
             </div>
         </div>
@@ -188,40 +256,56 @@
         <!-- Start Time Line -->
         <div class="time-line">
             <div class="container">
+                <h2>Methods</h2>
                 <div class="timeline-content">
                     
                     <div class="year">
-                        2018
+                        Ph.1
                     </div>
 
                     <div class="left">
                         <div class="content">
-                            <h3>Testing Heading</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas sequi, deleniti autem nostrum rem! Aliquid doloribus optio quaerat recusandae ipsum accusantium doloremque, temporibus quasi.</p>
+                            <h3>Planning</h3>
+                            <p>1. First and foremost, 3D model Design was made
+                            using a blender for visualizing the project before
+                            construction.
+                            2. A circuit diagram was made using fritzing to
+                            simulate the Arduino circuit to construct a smart
+                            system as illustrated in Figure </p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                     <div class="right">
                         <div class="content">
-                            <h3>Testing Heading</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas sequi, deleniti autem nostrum rem! Aliquid doloribus optio quaerat recusandae ipsum accusantium doloremque, temporibus quasi.</p>
+                            <h3>Construction</h3>
+                            <p>3. Making solid cement bricks by making
+                                measurements 0.20m in length, 0.10m in height,
+                                and 0.06m in thickness
+                                4. Cutting Ceramic into small pieces with
+                                dimensions
+                                0.03x0.03m and 0.07x0.03m.</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                     <div class="year">
-                        2016
+                        Ph.2
                     </div>
                     <div class="left">
                         <div class="content">
-                            <h3>Testing Heading</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas sequi, deleniti autem nostrum rem! Aliquid doloribus optio quaerat recusandae ipsum accusantium doloremque, temporibus quasi.</p>
+                            <h3>Construction</h3>
+                            <p>
+                                5. Construct the prototype using these blocks to make
+                                them fit the shape according to the 3d design.
                         </div>
                     </div>
                     <div class="clearfix"></div>
+                    <div class="year">
+                        Ph.3
+                    </div>
                     <div class="left">
                         <div class="content">
-                            <h3>Testing Heading</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas sequi, deleniti autem nostrum rem! Aliquid doloribus optio quaerat recusandae ipsum accusantium doloremque, temporibus quasi.</p>
+                            <h3>Electronics</h3>
+                            <p>Finally, Smarts systems were wired as shown in the schematic diagram and Using the Arduino IDE program, Coding was implemented.</p>
                         </div>
                     </div>
                 </div>
@@ -229,59 +313,18 @@
         </div>
         <!-- End Time Line -->
 
-        <!-- Start Our Features -->
-         <div class="features">
-            <h2>Our Features</h2> 
-            <div class="container">
-                <div class="feat-box">
-                    <img src="images/Feat-1.png" alt="">
-                    <h4>Development</h4>
-                    <p>We are professional marketeers, We will do any thing imagine in no time.</p>
-                </div>
-                <div class="feat-box">
-                    <img src="images/Feat-2.webp" alt="">
-                    <h4>Marketing</h4>
-                    <p>We are professional marketeers, We will do any thing imagine in no time.</p>
-                </div>
-                <div class="feat-box">
-                    <img src="images/Feat-3.webp" alt="">
-                    <h4>Hosting</h4>
-                    <p>We are professional marketeers, We will do any thing imagine in no time.</p>
-                </div>
-                <div class="feat-box">
-                    <img src="images/Feat-4.webp" alt="">
-                    <h4>Mobile Develop</h4>
-                    <p>We are professional marketeers, We will do any thing imagine in no time.</p>
-                </div>
-                <div class="feat-box">
-                    <img src="images/Feat-5.webp" alt="">
-                    <h4>Cloud And Servers</h4>
-                    <p>We are professional marketeers, We will do any thing imagine in no time.</p>
-                </div>
-                <div class="feat-box">
-                    <img src="images/Feat-6.webp" alt="">
-                    <h4>SEO</h4>
-                    <p>We are professional marketeers, We will do any thing imagine in no time.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-         </div>
-        <!-- End Our Features -->
-
         <!-- Start testimonials -->
          <div class="testimonials">
             <div class="container">
-                <h2>Testimonials</h2>
+                <h2>Team Members</h2>
                 <div class="ts-box">
-                    <p>Iam Very Happy With The Product its amazing and I recieve it very fast and the price was amazing</p>
                     <div class="person-info">
-                        <img src="images/person.png" alt="">
+                        <img src="images/person (1).png" alt="">
                         <h4>Ahmed Mossad</h4>
                         <p>CEO At Company</p>
                     </div>
                 </div>
                 <div class="ts-box">
-                    <p>Iam Very Happy With The Product its amazing and I recieve it very fast and the price was amazing</p>
                     <div class="person-info">
                         <img src="images/person.png" alt="">
                         <h4>Ebrahim Said</h4>
@@ -289,7 +332,13 @@
                     </div>
                 </div>
                 <div class="ts-box">
-                    <p>Iam Very Happy With The Product its amazing and I recieve it very fast and the price was amazing</p>
+                    <div class="person-info">
+                        <img src="images/person.png" alt="">
+                        <h4>Sherief Mahmoud</h4>
+                        <p>CEO At Company</p>
+                    </div>
+                </div>
+                <div class="ts-box">
                     <div class="person-info">
                         <img src="images/person.png" alt="">
                         <h4>Sherief Mahmoud</h4>
@@ -326,10 +375,12 @@
         <!-- End Contact Us -->
 
         <!-- Start Footer -->
-        <div class="footer">Created With Love By Kaim Atef ❤</div>
+        <div class="footer">Created With Love By 10222 Team ❤</div>
         <!-- Start Footer -->
 
         
         <script src="javascript/main.js"></script>
-    <div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Go for it</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday Prices",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 22px; font-weight: 700; text-transform: uppercase;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Get 90% Off!",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Get Web Hosting for $0.99/month + SSL Certificate for FREE!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 15px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2020-wp-inject-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body>
+        <script type="text/javascript" src="js/particles.min.js"></script>
+        <script type="text/javascript" src="js/myparticles.js"></script>
+        <script type="text/javascript" src="javascript/owl.carousel.min.js"></script>
 </html>
