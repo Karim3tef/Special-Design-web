@@ -6,6 +6,7 @@
 
 *{
     box-sizing: border-box;
+    transition: all ease 1s;
 }
 
 
@@ -55,6 +56,15 @@ body{
 .settings-box .toggle-settings {
     width: 30px;
     padding: 4px 0;
+}
+#myparticles
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* //background-color: rgba(0,0,0,0,7); */
 }
 
 /*.settings-box .container{
@@ -148,7 +158,7 @@ body{
 
 .landing-page{
     min-height: 100vh;
-    background-image: url('../images/01.jpg');
+    background-image: url('../images/slide1-01.jpg.webp');
     background-size: cover;
 }
 
@@ -205,6 +215,7 @@ body{
 .header-area .links-container {
     width: 100%;
     text-align: right;
+    padding-top: 20px;
 }
 
 .header-area .toggle-menu {
@@ -237,6 +248,13 @@ body{
     height: 4px;
     margin-bottom: 4px;
     border-radius: 4px; 
+}
+
+.verde-logo {
+    width: 140px;
+    background-color: white;
+    border-radius: 35px;
+    cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -384,7 +402,7 @@ body{
 
 .about-us .image-box{
 
-    flex: 1;
+    margin-top: 85px;
     text-align: center;
 } 
 
@@ -434,12 +452,18 @@ body{
 
 }
 
+.Test-plan {
+    border: 3px solid #a2b49d;
+    border-radius: 10px;
+}
+
 .skills .skill-box .skill-name {
     
     font-weight: bold;
     width: 140px;
     text-align: center;
     line-height: 30px;
+    padding: 0 20px 0 0 ;
 
 }
 
@@ -462,6 +486,19 @@ body{
     border-radius: 6px;
     position: relative;
     overflow: hidden;
+}
+.owl-carousel button.owl-dot
+{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	margin:0 5px;
+	background-color: #fff;
+}
+
+.owl-carousel button.owl-dot.active
+{
+	background-color: #e84118;
 }
 
 
@@ -585,6 +622,14 @@ body{
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #EEE;
+}
+
+.time-line h2 {
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 30px;
+    margin: 0 0 60px;
+    text-align: center; 
 }
 
 
@@ -838,10 +883,10 @@ body{
 }
 
 .testimonials .ts-box {
-    padding: 20px;
+    padding: 7px;
     position: relative;
     z-index: 2;
-    width: calc(98% / 3);
+    width: calc(98% / 4);
     float: left;
     background-color: #fff;
 }
@@ -855,9 +900,14 @@ body{
 }
 
 .testimonials .ts-box:not(:last-of-type){
-    margin-right: 1%;
+    margin-right: 7px;
 }
 
+.readings{
+    border: 3px solid;
+    text-align: center;
+    position: relative;
+}
 
 
 .testimonials .ts-box > p {
@@ -1100,5 +1150,6 @@ body{
     padding: 20px;
     text-align: center;
 }
+
 
 /* End Footer */
