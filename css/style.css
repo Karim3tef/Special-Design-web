@@ -889,6 +889,8 @@ body{
     width: calc(98% / 4);
     float: left;
     background-color: #fff;
+    height: 120px;
+
 }
 
 @media (max-width: 767px) {
