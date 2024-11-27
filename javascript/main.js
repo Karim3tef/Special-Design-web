@@ -6,8 +6,6 @@ let mainColors = localStorage.getItem("color_option");
 if (mainColors !== null) {
 
     // console.log("Local Storage Is Not Empty , Now You Can Set It On Root");
-    // console.log(localStorage.getItem("color_option"));
-
     document.documentElement.style.setProperty('--main-color', mainColors);
 
     //Remove active class From All colors List Item
